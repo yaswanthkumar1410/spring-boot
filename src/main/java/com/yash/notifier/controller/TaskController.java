@@ -39,6 +39,7 @@ public class TaskController {
         this.taskService = taskService;
     }
 
+
     @GetMapping
     public ResponseEntity<List<TaskResponse>> getTasks() {
         return ResponseEntity.ok(taskService.getTasks());
